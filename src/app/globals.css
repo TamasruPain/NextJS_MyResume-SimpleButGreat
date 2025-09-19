@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import 'animate.css';
+@plugin "daisyui" {
+    themes: light , dark --default;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.card {
+    @apply hover:scale-102 transition-all duration-300 hover:shadow-green-500 shadow-lg rounded-lg
+}
+
+.btn{
+    @apply rounded-lg
+}
+
+.navbar-btn{
+    @apply rounded-full hover:shadow-sky-500 shadow-sm
+}
+.float-btn{
+    @apply btn-md lg:btn-lg btn-circle hover:shadow-sky-500 shadow-sm
+}
