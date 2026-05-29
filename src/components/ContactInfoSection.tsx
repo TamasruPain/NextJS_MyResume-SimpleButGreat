@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedinIn, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import {myResume} from "@/store/myResume";
 
 const ContactInfoSection = () => {
     const phoneNumber = "919903958424";
@@ -54,13 +55,13 @@ const ContactInfoSection = () => {
             <div className={''}>
                 <h1 className={'text-xl'}>Connect With Me</h1>
                 <div className={'mt-3'}>
-                    <Link className={'btn btn-soft rounded-lg mx-2 my-2'}
+                    <Link className={'btn btn-soft hover:shadow-md shadow-blue-500 shadow-xs rounded-lg mx-2 my-2'}
                           href={'https://github.com/TamasruPain'}
                           target={'_blank'}>
                         <FontAwesomeIcon icon={faGithub} size="xl"/>
                         GitHub
                     </Link>
-                    <Link className={'btn btn-soft rounded-lg mx-2 my-2'}
+                    <Link className={'btn btn-soft hover:shadow-md shadow-blue-500 shadow-xs rounded-lg mx-2 my-2'}
                           href={'https://www.linkedin.com/in/tamasrupain/'}
                           target={'_blank'}>
                         <FontAwesomeIcon icon={faLinkedinIn} size="xl"/>
@@ -70,7 +71,7 @@ const ContactInfoSection = () => {
                         href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-soft rounded-lg mx-2 my-2"
+                        className="btn btn-soft hover:shadow-md shadow-blue-500 shadow-xs rounded-lg mx-2 my-2"
                     >
                         <FontAwesomeIcon icon={faWhatsapp} size="xl"/>
                         WhatsApp
@@ -80,10 +81,10 @@ const ContactInfoSection = () => {
             <div className="divider"/>
             <div className={''}>
                 <a
-                    href="/TamasruPain_2025_v6.pdf"
+                    href={myResume.pdf}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={'btn btn-neutral rounded-lg w-full mt-2 hover:shadow-green-500 shadow-md'}>
+                    className={'btn btn-neutral rounded-lg w-full mt-2 hover:shadow-md shadow-amber-500 shadow-xs'}>
                     Open my Resume
                     <LucideArrowUpRightFromSquare size={'18'}/>
                 </a>

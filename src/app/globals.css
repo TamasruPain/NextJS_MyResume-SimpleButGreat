@@ -9,7 +9,11 @@ html {
 }
 
 .card {
-    @apply hover:scale-102 transition-all duration-300 hover:shadow-green-500 shadow-lg rounded-lg
+    @apply hover:scale-101 transition-all duration-500 hover:shadow-lg shadow-green-500 shadow-sm rounded-lg
+}
+
+.skillcard {
+    @apply hover:scale-101 transition-all duration-300 hover:shadow-lg shadow-blue-400 shadow-md rounded-lg
 }
 
 .btn{
@@ -20,5 +24,5 @@ html {
     @apply rounded-full hover:shadow-sky-500 shadow-sm
 }
 .float-btn{
-    @apply btn-md lg:btn-lg btn-circle hover:shadow-sky-500 shadow-sm
+    @apply btn-md lg:btn-lg btn-circle hover:hover:shadow-md shadow-amber-500 shadow-sm
 }

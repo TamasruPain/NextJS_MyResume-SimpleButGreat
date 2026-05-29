@@ -41,7 +41,6 @@ export default function Footer() {
                     <h6 className="footer-title">Get In Touch</h6>
                     <a className="link link-hover flex gap-1"><LucideMail/> tamasrupain02@gmail.com</a>
                     <a className="link link-hover flex gap-1"><LucidePhone/> +91 99039 58424</a>
-                    <a className="link link-hover flex gap-1"><LucideMapPin/> Bangalore, Karnataka, India</a>
                     <label>Available for freelance work and full-time opportunities</label>
                 </nav>
             </footer>

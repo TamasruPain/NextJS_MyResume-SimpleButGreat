@@ -93,10 +93,10 @@ const ContactForm = () => {
                 <div className="flex justify-center gap-5">
                     <button
                         type="submit"
-                        className="btn btn-neutral rounded-lg w-full hover:shadow-green-500 shadow-md"
+                        className="btn btn-neutral rounded-lg w-full hover:shadow-md shadow-amber-500 shadow-xs"
                         disabled={loading}
                     >
-                        {loading ? "Sending..." : "Send Message"} <Send/>
+                        {loading ? "Sending..." : "Send Message"} <Send size={16}/>
                     </button>
                 </div>
             </form>

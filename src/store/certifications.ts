@@ -18,5 +18,14 @@ export const certifications: Certification[] = [
         date: 'Sept 3rd, 2025',
         pdf: '/certifications/UC-full-stack web development-certificate.pdf',
     },
+    {
+        id:2,
+        title: 'AWS Certified Cloud 2025',
+        company:'Udemy',
+        description:'AWS Certified Cloud Practitioner CLF-C02 2025 bootcamp Udemy (October 2025)',
+        image:'/certifications/aws_certified_cloud_practitioner.jpg',
+        date:'October 3rd, 2025',
+        pdf:'/certifications/aws_certified_cloud_practitioner.pdf'
+    }
 
 ]
